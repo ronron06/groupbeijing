@@ -1,0 +1,414 @@
+
+/*
+#ea142d = red
+#012338 = dark blue
+#7ba2b1 = light blue
+#fce1a9 = yelloww
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap'); /*  font-family: 'Readex Pro', sans-serif;; */
+
+body,html{
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+}
+*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+          
+}
+.container-banner{
+            background-image: url("cover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         
+            }
+
+            .container-banner img{
+                        padding-bottom: -5em;
+            }
+.container{
+            width: 100%;
+            height: 100vh;
+}
+
+.navcolor{
+            background-color:#012338;
+           
+}
+
+
+.intro-container{
+            
+            width: 100%;
+}
+.flex-box{
+            display: flex;
+            margin: 0 auto;
+            color:white;
+}
+.column{
+            background-color: #f8f9fa;
+            width: 50%;
+            text-align: right;
+            padding:1em;
+            color: #012338;
+}
+
+.column h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 5em;
+}
+.column p{
+            font-family: sans-serif;
+            max-width: 50%;
+            font-size: 1.3em;
+            line-height: 2em;
+}
+.bg-right{
+            background-color: #012338;
+            text-align: left;
+            color:#fff ;
+}
+
+.text-right {
+            text-align: right;
+}
+
+.carouselContainer{
+            background-image: url("carouselbg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+           
+            justify-content: space-around;
+            color:white;
+}
+
+.customCarousel{
+            width: 30%;
+            display: flex;
+            margin: 0 auto;
+            padding:1em 0;
+           
+}
+
+.mv{
+            width: 100%;
+}
+
+.mv-container{
+            display: flex;
+}
+
+.mv-col-left{
+            text-align: right;
+            padding:2em;
+            background-color: #012338;
+            color: #fff;
+            font-size: 1.125em;
+            line-height: 2em;
+}
+.text-white{
+            text-decoration: none;
+}
+
+.mv-col-right{
+            text-align: left;
+            padding:2em;
+            color:#012338;
+            background-color: #fff;
+            font-size: 1.125em;
+            line-height: 2em;
+}
+.quickmerch{
+            width: 100%;
+            height: fit-content;
+            background-color: #7ba2b1;
+            padding: 2em 0;
+}
+
+.quickmerch h1{
+            color:#fff;
+            text-align: center;
+            padding: 1em 0;
+}
+
+.quickmerchcontainer{
+            max-width: 1100px;
+            margin: 0 auto;
+           
+}
+.merch{
+            display: flex;
+         justify-content: space-around;
+         margin:2em 0;}
+
+.mcol{
+            width: 30%;
+            cursor: pointer;
+
+}
+.mcol img:hover{
+            
+            
+            padding:0.3em 0;
+             transition:.3s;
+ }
+
+.merch img{
+            width: 100%;
+            background-color:#fce1a9;
+            padding:1em;
+}
+
+.merch img:hover{
+            background-color:#ea142d;
+}
+
+.vabtn{
+            text-decoration: none;
+            color:#fce1a9;
+            font-size: 1.5em;
+             
+}
+
+.vabtn:hover{
+            color:#ea142d;
+            text-decoration: none;
+}
+
+/***************MERCHANDISE***************/
+
+.merchandise-banner{
+            background-image: url("carouselbg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+}
+.merchandise{
+            max-width: 1300px;
+            margin:0 auto;
+}
+.merchandise-banner h1{
+            text-align: center;
+            padding:1em;
+            color:white;
+            text-transform: uppercase;
+            font-size: 6em;
+            font-weight: 900;
+}
+.floating-window{
+            position: sticky;
+            z-index: 3;
+            overflow-y: hidden;
+            visibility:hidden;
+           
+}
+.hidden{
+            visibility: hidden;
+}
+.fw-container{
+            background-color: #012338;
+           position: fixed;
+            z-index: 2;
+            width: 80%;
+            height: 80vh;
+           margin:5% 10%;
+           
+}
+
+.fw-flex{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin: 0 auto;
+}
+.fw-col{
+            width: 50%;
+            padding:5em 1em;
+            color:white;
+}
+.fw-col h2{
+            color:#fce1a9;
+}
+.fw-col p{
+            line-height: 2em;
+            
+}
+.option-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+}
+
+.buybtn{
+            text-decoration: none;
+            color:#7ba2b1;
+            text-transform:uppercase;
+            font-size:1rem;
+            padding:0.5em;
+}
+
+.buybtn:hover{
+            background-color: #7ba2b1;
+            color:#012338;
+            text-decoration: none;
+}
+
+#close,#close2,#close3,#close4,#close5,#close6,#close7,#close8,#close9{     
+            text-decoration: none;
+            text-transform:uppercase;
+            font-size:1rem;
+            cursor: pointer;
+            padding:0.5em;
+            color:#ea142d;
+}
+#close:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close2:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close3:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close4:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close5:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close6:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close7:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close8:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+#close9:hover{
+            background-color: #ea142d;
+            color:#012338;
+            text-decoration: none;
+}
+
+#overlay {
+            position: fixed; /* Sit on top of the page content */
+            display:none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+          }
+.quickmerchcontainer h1,.quickmerchcontainer h2{
+            text-align: center;
+}
+
+
+@media only screen and (max-width: 950px) {
+           .flex-box{
+                       flex-direction: column;
+                       text-align: center;
+           }
+           .column p{
+                       margin: 0 auto;
+           }
+           .column{
+                       width: 100%;
+                       text-align: center;
+           }
+           .mcol{
+            width: 100%;
+            padding:1em;
+           }
+           .col{
+            width: 100%; 
+            padding:.5em 1em;
+           }
+           
+           .bg-right{
+                      
+           }
+           .mv-container{
+                       flex-direction: column;
+           }
+           .merch{
+                       flex-direction: column;
+           }
+           
+           .mv-col-left,.mv-col-right{
+                       padding:1em;
+           }
+          }
+@media only screen and (max-width:850px){
+
+            .fw-container{
+                        background-color: #012338;
+                       position: fixed;
+                        z-index: 2;
+                        width: 100%;
+                        height: 100vh;
+                       margin:0;
+                       
+            }
+
+            .fw-flex{
+                        flex-direction: column;
+                        
+            }
+            .fw-col{
+                        width: 80%;
+                        padding:1em;
+                        margin:0 auto;
+            }
+            .fw-col p{
+                        line-height: 1em;
+                        
+            }
+}
+          @media only screen and (max-width: 650px) {
+            .customCarousel{
+                        width: 50%;
+            }
+            .merchandise-banner h1{
+
+                      font-size:4em;  
+            }
+            footer{
+                        height: 180vh;
+            }
+           }
